@@ -1,0 +1,36 @@
+Ce este un limbaj de programare ?
+Un set bine definit de expressi si reguli, valide pe promovarea a instructiunilor pentru un compiler.
+(Tehnici de programare - paradigme)
+Un limbaj de programare are definite reguli sintactice si semantice individuale. Limbajul de programare este axat pe instructiuni fundamentale care sunt:
+     1. instructiuni de alocare;
+     2. instructiuni conditionale;
+     3. instructiuni ciclice (bucle).
+
+Sunt mai multe tipuri de clasificare a limbajelor de programare:
+     1. dupa modul de specificare a instructiunilor:
+ 	I. limbaje procedurale (C/C++, Java, Python),
+ 	II. limbaje neprocedurale (limbaje logice - Prolog, Lisp).
+     2. dupa nivelul de abstractizare (cum cineva poate intelege codul, intelegi - inalt):
+ 	I. prima generatie(cod masina) 0101,
+ 	II. a doua generatie (limbaje asambler),
+ 	III. a treia generatie "noua" (limbaje de nivel inalt: C/C++, Pascal, Python),
+ 	IV. a patra generatie (limbaje neprocedurale, pentru rezolvarea anumitor clase de probleme: SQL),
+ 	V. generatia cinci (limbaje utilizate in domenii cu logica, AI, retele neuronale).
+     3. dupa destinatie:
+ 	I. limbaje generale(C/C++, Python, Java),
+ 	II. limbaje specifice - sunt limbaje cu pentru un scop anume, folosite pentru interactiunea cu un anumit program(SQL, FoxPro), de asemenea limbajele sunt impartite in 3 mari familii in baza paradigmei de programare:
+ 		a) limbaje imperative - instructiunile sunt explicite, ele sunt de 3 tipuri (tipice, structurate, orientate pe obiecte(OOP))
+ 		b) limbaje functionale - limbajele care se bazeaza pe conceptul matematic al functiei
+ 		c) limbajele logice (declarative) - programarea intr-un limbaj logic, inseamna descrierea setului de relatii dintre date si rezultatul dorit, programatorul trebuie sa stabileasca modul in care datele evolueaza (modul cum ele evolueaz) in timpul calculului (Mercur, Prolog).
+
+Salvarea cu macro -- File -> Save As -> de ales extensia (Excel Macro Enabled)
+
+
+
+
+
+
+
+
+
+

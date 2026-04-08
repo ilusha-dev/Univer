@@ -1,0 +1,86 @@
+VBA pentru word se ocupa de manipularea documentelor, formatare, controlul continutului si automatizarea fluxului de lucru, este deosebit de utila pentru:
+	1. Formatarea standartizata;
+	2. Crearea sabloanelor;
+	3. Introuducere automata a referintelor si tabelelor;
+	4. Procesarea simultana a mai multor documente;
+	5. Eliminarea muncii repetitive;
+	6. Crearea de sabloane inteligente;
+	7. Integrarea cu alte aplicatii (extragerea de date prin excel, lucru cu outlook-ul, importarea bazelor de date, etc.).
+	   7.1 Modelul obiectului Microsoft Word.
+
+Programarea in VBA are un model ierarhic.
+   Structura principala:
+application - radacina/baza principala
+documents - fisier individual deschis in aplicatie (document, colectia de documente)
+sections
+paragraph
+style - colectie de setari de formatare
+sentences - propozitiile
+words
+range
+selection - este textul selectat in prezent sau legat de pozitia cursorului. Se aseamana cu 'range', dar este legat de interactiunea utilizatorului. 
+tables, headers/footers, bookmars, felds, etc.
+
+
+Fiecare obiect contine: proprietati, metode si colectii.
+Exemplu de acces la textul unui paragraf. 'application.documents(1).paragraphs(1).range.text' -> aceasta expresie acceseaza: aplicatia word, primul document deschis, primul paragraf, textul acelui paragraf. 
+
+Declararea si initializarea obiectelor:
+exemplu: 'dim p as paragraph' -> declararea obiectelor
+         'set p = active paragraph' -> initializarea obiectelor.
+
+Variabile si tipuri de date:
+Se va folosi option la inceputul fiecarui modul, tipurile de date mai des folosite in word (string, char, bool).
+Proprietati si metode: 
+exemple de proprietati: active document.name
+			selection.font.size
+
+exemple de metode: active document.save
+		   selection.typetext"textul"
+
+crearea unui document nou: 
+
+formatarea textului: selection.font.bold = true
+		     selection.font.italic = true
+		     selection.font.name = "arial"
+
+Crearea unui tabel: active document.tables.add
+		    range:= selection.range
+		    NumRows:= 4
+		    NumColumns:= 3
+
+Completarea tabelului cu text: set t = active document.tables(1)
+
+  Avantajele utilizarii VBA: 
+Automatizarea sarcinilor
+Cresterea productivitatii
+Reducererea erorilor
+Standartizarea documentelor 
+Generarea automata a documentelor/rapoartelor
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

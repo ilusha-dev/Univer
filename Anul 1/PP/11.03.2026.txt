@@ -1,0 +1,44 @@
+Prin utilizarea obiectelor putem utiliza urmatoarea operatie: 
+	1. citire si modificcarea datelor;
+	2. aplicarea formatarilor asupra elementelor;
+	3. generarea automata a rapoartelor;
+	4. efectuarea calculelor asupra unor volume mari de date;
+	5. automatizarea sarcinilor repetitive.
+
+Pentru a lucra cu obiectele VBA este necesar pentru a declara variabile de tip obiect. Declararea obiectelor se face cu instructiunea "dim" urmata de numele variabelei si tipul obiectului. Declararea contribuie la organizarea mai clara a codului si ajuta la identificarea erorilor.
+	
+   Initializarea obiectelor
+Initialiazarea este procesul prin care atribuim o referinta catre un obiect existent in aplicatie. Obiectele pot fi initializate cu ajutorul instructiunii "set": ex. 'set.a = workbooks("raport anual.xlsx")'. In acest caz variabila face referinta la registrul de lucru (raport). Intructiunea 'set' este obligatorie cand se atribuie o referinta catre un obiect. Fara aceasta instructiune variabila nu va contine referinta corecta. 
+
+   Accesarea proprietatilor si metodelor obiectelor
+Dupa initializare putem accesa proprietatile si metodele acestora. 'Proprietatile sunt atributiile unui obiect' 
+								   'Metodele sunt actiuni pe care le putem aplica obiectului'.
+Metodele permit executarea unor operatii complexe asupra unor obiecte cu ajutorul unor instructiuni simple. In Excel modelul de obiecte este organizat: 
+	Application.workbooks("rapoarte.xlsx").worksheets("date").range("2-5") - aceasta instructiune indica exact locatia obiectului in cadrul aplicatiei. 
+
+   Referirea la obiecte in cadrul aplicatiei office
+Referirea la obiecte poate fi realizata in doua moduri principale:
+	1. Referirea explicita - se specifica intreaga cale a obiectului in cadrul modelului obiectului. Aceasta metoda este recomandata in programele complexe deoarece reduce procentul aparitiei erorilor.
+	2. Referirea implicita - se utilizeaza obiectul activ al aplicatiei fara a specifica intreaga structura.
+Obiectele de acelasi tip sunt organizate in colectii. O colectie reprezinta un grup de obiecte similare, dar care pot fi accesate individual, ex. workbooks - colectia tuturor obiectelor din pagina.
+			 worksheets - colectia tuturor obiectelor de calcul. 
+Pentru parcurgerea tuturor elementelor din colectie se va utiliza instructiunea 'foreach'. 
+ex. foreach a in worksheets ... . 
+
+   Evenimentele obiectelor
+Prin utilizarea declaratiei si initializarii obiectelor, accesarea proprietatilor, apelarea metodelor, gestionarea colectiilor se poate controla eficient structura si continutul documentelor. Utilizarea elementelor permite utilizarea unor aplicatii VBA. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

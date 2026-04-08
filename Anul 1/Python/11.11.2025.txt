@@ -1,0 +1,19 @@
+11.11.2025
+
+Functia "bool" converteste un obiect in forma "True" sau "False".
+
+In cazul none, in cazul false, in cazul 0.0, in cazul 0, in cazul 0j, in cazul colectiilor vide, in cazul range. Obiecte definite de utilizator care au null. Un sir vid == False. Un sir vid in spatiu == True. Bool 0 == False.
+
+Actiunea se aplica uniform asupra intregului obiect. EXP: (Clear, Reverse, Copy, Upper, Capitalize).
+
+Criteriul de determinare completa:
+ 	1. O metoda fara parametri, are un comportament unic si fix;
+ 	2. Metoda se comporta identic de fiecare data, indiferent de continut;
+ 	3. Programatorul gandeste in termen de decizie:
+ 		1. Daca metoda a trebuit sa i-ai o decizie (ce ?, unde ?, cu ce ?, cat ?), atunci are nevoie de parametri;
+ 		2. Daca metoda nu trebuie sa decida nimic, actioneaza mecanic si total, atunci nu are parametri;
+ 		3. Daca metoda are o singura cale de actiune, nu are parametri;
+ 		4. Daca metoda are mai multe variante posibile de actiune, are nevoie de parametri;
+ 		5. Metodele fara parametri sunt autonome, singure stiu ce au de facut;
+ 		6. Metodele cu parametri sunt dependente, au nevoie de informatii externe;
+ 		7. Toate metodele lucreaza cu obiectul lor, fara alte informatii.

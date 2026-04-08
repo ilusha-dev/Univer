@@ -1,0 +1,100 @@
+	Ca sa nu scrim de fiecare data acest cod, este de dorit sa il reprezentam in asa mod, intr-un subprogram, ca sa putem apela acest subprogram, in toate punctele programului in care este necesara executarea acelui cod. Aceasta prezenta, a acestui subprogram permite o intelegere mai usoara si mai buna a programului (Mai usor si mai bun). Usureaza intelegerea, testarea si modificarea ulterioara. -> Aceste subprograme se numesc functii.  La general functia intoarce un rezultat. 
+
+	Definitie: 
+   Functia este ca o cutie, odata creata nu trebuie sa ne facem griji la ceea ce contine in interiorul sau, pur si simplu trebuie sa ne amintim numele si datele necesare pentru a rezolva un proces. 
+   Functiile sunt sectiuni de cod care indeplinesc o anumita sarcina si pe care le putem include in propriile programe mai mari, acesta ne ferestre de cheltuirea timpului. In cazul aparitiei erorii in cadrul subprogramului care se repeta, putem foarte repede sa schimbam functia, fara a fi necesar sa caut intregul program pentru corectarea tuturor repetarilor in cod. Functiile se impart in 2 categorii mari din punct de vedere a rezultatului pe care il intorc:
+   1. Functiile care returneaza un rezultat (folosesc "return");
+   2. Functiile care nu returneaza un rezultat (nu folosesc "return").
+
+	Forma generala a functiei in PYTHON:
+  def numele_functiei (definirea_parametrilor): 
+  blocul_de_intructiuni
+
+	Functia reprezinta un sir de instructiuni care indeplinesc un calcul, cand definim o functie specificam numele si succesiunea de parametri. Ideea este similara cu acea din matematica, doar ca functiile in limbajul de programare nu produc doar calcule ca in matematica. Functiile care sunt predefinite se mai numesc incorporate.
+	
+Functii simple de parameter:
+
+     def numele_functiei (definirea_parametrilor):
+      blocul_de_intructiuni
+
+2. Functii cu un numar fix de parametri:
+
+     def f(x):
+     return x**2
+     f(4)
+
+3. Functii cu 2 parametri:
+
+     def g(x, y):
+     return x**y
+     g(2, 3)
+     g(f(4, 1))
+
+4. Functii cu paritatea unui numar:
+
+     def par(n)
+     if (n % 2 == 0):
+     print ("Numar par !")
+     else: 
+	print ("Numar impar !")
+     par(2)
+
+
+
+De ce utilizam functiile in programele noastre ? 
+  1. Pentru a nu repeta acelasi cod de mai multe ori;
+  2. O functie poate fi utilizata in mai multe aplicatii;
+  3. Permite o intretinere mai usoara a aplicatiei.
+
+
+
+	def afisareMeniu(print("Meniu"), print("Portocale"), print("Mere")):
+		afisareMeniu()
+
+
+Generatoarele servesc la simplificarea creerii proceselor iterative.
+		Generator > Iterator
+Generatoarele reprezinta o suprapunere asupra iteratoarelor si e bazeaza pe ele pentru a fi incrementate. "Yield" ne permite returnarea unui rezultat ca si "return", numai ca "yield" creeaza o pauza dupa transmiterea raspunsului cu scopul reluarii executarii functiei, in punctul in care a fost intrerupta la fiecare cerere a valorii. 
+		return                                    vs                        yield
+return opreste total functia                                          yield transforma functia intr-un generator, adica 
+si returneaza o valoare sau                                           o functie care produce valori la cerere (una cate una)
+un obiect, dupa return functia nu mai continua.                        generatorul tine minte unde a ramas, da o valoare, dar opreste
+								      functia temporar.
+
+
+In python este o limita, are o limita la 1000 de apeluri.
+Ideea programarii recursive, rezolva problema mare, reducand-o la una sau mai multe probleme mici, care seamana cu problema din start.
+
+Functiile Lambda: (functie optionala)
+Pentru lambda sunt utile urmatoarele 3 functii:
+Map
+Filter
+Reduce
+
+Lambda este un operator pentru a crea functii anonime compuse doar din expresii. Fiind functie anonima, adica fara nume, aceasta nu poate fi referita ulterior, are o singura linie, dar poate fi atribuita unei variabile.
+
+Pana acum am utilizat def, dar uneori poate fi lunga si greoaie, cu acest scop a aparut functiile lambda, cu acest scop, cuvantul cheie lambda permite o definitie mai scurta, dar totusi cu un comportament diferit. Daca o punem intr-o variabila, poate fi utilizata ca functie, doar fara nume. Este folosita la functii foarte scurte, cu putine instructiuni, nu este necesar sa se scrie o functie clasica cu def. 
+
+"Map" returneaza o lista, scoate efortul de a scri o bucla pentru parcurgerea elementelor secvente.
+"Filter" verifica daca toate elementele unei secvente indeplinesc o anumita conditie.
+"Reduce" 
+
+Sunt functii "Corutina" lucreaza cu programarea asincrona;
+funtii de obiecte de ordin superior, functii care primesc alte functii sau returneaza functii;
+funtii decorator, modifica alte functii;
+funcii partiale;
+functii metode, functii care apartin unei clase;
+Nasted functions functii anonime definite in interior;
+funtii callback functii trimise ca un argument la alte functii;
+functii varadice - argumentul: (*args, kword);
+functii principale, cand vrei ca un fisier sa fie rulat direct.
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,57 @@
+Diferenta dintre "End" si "Exit" este: 
+	End - opreste executia global;
+	Exit - are caracter local si compilat. Aceasta instructiune nu este autonoma, dar se va asocia unei structuri specifice: 
+	  1. Exit sub;
+	  2. Exit function;
+	  3. Exit for;
+	  4. Exit propriety;
+	  5. Exit do.
+	Fiecare din aceste variante determina parasirea imediata a structurii in care este utilizata, transferand controlul catre instructiunea urmatoare dupa aceasta instructiune.
+
+1. Exit sub - se utilizeaza pentru a iesi din procedura de tip "sum", in acest caz daca prima conditie este indeplinita, procedura se incheie fara a executa instructiunile ulterioare. Aceasta instructiune contribuie la editarea structurilor conditionale excesive si si ajuta la citirea logicii algoritmice. 
+2. Exit function - permite parasirea anticipala dupa atribuirea valorii returnate. 
+3. Exit propriety - este utilizata in cazul procedurilor de tip "propriety" ('get', 'let', 'set') functioneaza identic ca "exit function", dar este specifica programarii orientate pe obiecte din VBA.
+4. Exit for - permite intreruperea buclei (intreruperea anticipata) de tip "for" "next". Aceasta instructiune optimizeaza executia atunci cand conditia de oprire este indeplinita inainte de finalizarea intervalului e iterare. Ea reduce timpul de procesare si evita operatii complexe(mari).
+5. Exit do - se va utiliza in cadrul buclelor "do" si "loop", indiferent  daca acestea sunt conditionate la inceput sau la sfarsit. Executia ciclului va fi intrerupta imediat ce variabila atinge valoare stabilita, iar controlul trece la urmatoarea instructiunii.
+	
+Instructiunea "EXIT" are o conceptie structurata asupra controlului fluxului si permite: 
+	1. Validarea timpurie a datelor;
+	2. Gestionarea cazurilor exceptionale;
+	3. Optimizarea algoritmilor;
+	4. Reducerea complexitatii conditionale.
+Instructiunea "DoEvents" are rolul de a ceda temporar controlul sistemului de operare permitand procesarea evenimentelor aflate in coada de mesaje fara a intrerupe definitiv executia procedurii corecte. Ea se va utiliza in special atunci cand se executa operatii de durata care ar putea bloca interfata utilizatorului. Instructiunea "DoEvents" permite sistemului sa proceseze: 
+	1. Evenimente de tastatura sau mouse;
+	2. Comenzi de anulare (ESC);
+	3. Actualizari vizuale ale interfetei;
+	4. Alte procese in asteptare.
+
+Instructiunea nu primeste argumente, dupa procesare executia continua de la instructiunea urmatoare.
+	Aavantaje:
+	 1. Mentine 
+	 2. Permite anularea opetiilor de durata;
+	 3. Faciliteaza actualizarea vizuala, progresiva.
+
+	Limitari si riscuri:
+	 1. Are impact asupra performantei 
+
+
+		Tratarea erorilor
+   Instructiunea "On Error GoTo" aceasta instructiune activeaza un mecanism de redirectionare a executiei unei instructiune specificate in cazul aparitiei unei erori. Prin utilizarea "Exit sub" sau "Exit function" se evita executarea accidentala a codului in absenta unei erori. In acest mod oprirea devine conditionate exclusiv de aparitia unei situatii exceptionale.
+   Instructiunea "On Error ResumeNext" aceasta instructiune modifica comportamentul programului si in loc sa rederictioneze executia, ea determina ignorarea erorii si continuarea cu instructiunea urmatoare. La utilizarea acestei instructiuni:
+	1. Executia nu se va intrerupe;
+	2. Este necesar de a verifica explicit instructiunea "err";
+	3. Daca eroarea nu este verificata ea poate ramane 'ascunsa' ceea ceva duce la rezultate incorecte;
+Aceasta instructiune este utila in situatii controlate, cum ar fi: verificarea existenetei unui fisier, obiect sau operatii optionale.
+   Instructiunea "On Error GoToZero" aceasta instructiune dezactiveaza mecanismul de tratare a erorilor prin utilizarea acestei instructiuni se va delimita clar sectiunea in care erorile sunt tratate diferit. In linii generale tratarea erorilor este un element de arhitectura a aplicatiei.
+	"On Error GoTo" este potrivit pentru situatii complexe si situatii complexe. 
+	"On Error ResumeNext" este potrivit pentru modificari punctuale.
+	"On Error GoToZero" este necesar pentru delimitarea clara a domeniul.
+Utilizarea acestor instructiuni nu presupune oprirea completa a aplicatiei, dar permite gestionarea situatiei exceptionale si iesirea controlata din procedura. Oprirea reexecutiei trebuie sa fie controlata, localizata si justificata logic. 
+
+
+
+
+
+
+
+
