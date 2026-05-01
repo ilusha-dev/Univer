@@ -1,0 +1,5 @@
+Microsoft 220000
+Google 180000
+Apple 160000
+Amazon 350000
+Tesla 90000
